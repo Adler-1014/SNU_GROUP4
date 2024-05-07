@@ -59,3 +59,5 @@ const launchHistory = tsvParse(await text("https://planet4589.org/space/gcat/tsv
 
 // Write out csv formatted data.
 process.stdout.write(csvFormat(launchHistory));
+
+
