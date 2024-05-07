@@ -91,7 +91,7 @@ toc: false
             });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfKy9-kJEStEIzUCcoOGcI074gK-35Ofw&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap" async defer></script>
 
 </head>
 <body>
