@@ -42,74 +42,79 @@ toc: false
   }
 }
 
+
+  @import url("https://fonts.googleapis.com/css?family=Noto+Serif+KR&display=swap");
+  body {
+    font-family: "Noto Serif KR", serif;
+  }
+
+  .card { 
+    padding: 10px;
+  }
+  .responsive-img{
+    width: 100%;
+    height : auto;
+    display: block;
+  }
+
 </style>
 
 <div class="hero">
-  <h1>Hello, Observable Framework</h1>
-  <h2>Welcome to your new project! Edit&nbsp;<code style="font-size: 90%;">src/index.md</code> to change this page.</h2>
-  <a href="https://observablehq.com/framework/getting-started">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
+  <h1>관악02 시각화 프로젝트</h1>
+  <h2>시각화 4조, 김지영 김태형 이민영 이영아 윤형식 장은수 </h2>
+  <a href="https://www.snukdt.com/">서울대 빅데이터 핀테크<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
 </div>
 
-<div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
-  <div class="card">${
-    resize((width) => Plot.plot({
-      title: "Your awesomeness over time 🚀",
-      subtitle: "Up and to the right!",
-      width,
-      y: {grid: true, label: "Awesomeness"},
-      marks: [
-        Plot.ruleY([0]),
-        Plot.lineY(aapl, {x: "Date", y: "Close", tip: true})
-      ]
-    }))
-  }</div>
-  <div class="card">${
-    resize((width) => Plot.plot({
-      title: "How big are penguins, anyway? 🐧",
-      width,
-      grid: true,
-      x: {label: "Body mass (g)"},
-      y: {label: "Flipper length (mm)"},
-      color: {legend: true},
-      marks: [
-        Plot.linearRegressionY(penguins, {x: "body_mass_g", y: "flipper_length_mm", stroke: "species"}),
-        Plot.dot(penguins, {x: "body_mass_g", y: "flipper_length_mm", stroke: "species", tip: true})
-      ]
-    }))
-  }</div>
+<div>
+<span> 이번 시각화 프로젝트를 진행하며 제작했던 자료들입니다. </span>
 </div>
-
-```js
-const aapl = FileAttachment("aapl.csv").csv({typed: true});
-const penguins = FileAttachment("penguins.csv").csv({typed: true});
-```
-
----
-
-## Next steps
-
-Here are some ideas of things you could try…
-
-<div class="grid grid-cols-4">
+<div class="grid grid-cols-2">
   <div class="card">
-    Chart your own data using <a href="https://observablehq.com/framework/lib/plot"><code>Plot</code></a> and <a href="https://observablehq.com/framework/files"><code>FileAttachment</code></a>. Make it responsive using <a href="https://observablehq.com/framework/display#responsive-display"><code>resize</code></a>.
+    <img src="./images/chart1.png" class="responsive-img">
   </div>
   <div class="card">
-    Create a <a href="https://observablehq.com/framework/project-structure">new page</a> by adding a Markdown file (<code>whatever.md</code>) to the <code>src</code> folder.
+    <img src="./images/chart2.png" class="responsive-img">
   </div>
   <div class="card">
-    Add a drop-down menu using <a href="https://observablehq.com/framework/inputs/select"><code>Inputs.select</code></a> and use it to filter the data shown in a chart.
+    <img src="./images/chart3.png" class="responsive-img">
   </div>
   <div class="card">
-    Write a <a href="https://observablehq.com/framework/loaders">data loader</a> that queries a local database or API, generating a data snapshot on build.
+    <img src="./images/chart4.png" class="responsive-img">
   </div>
   <div class="card">
-    Import a <a href="https://observablehq.com/framework/imports">recommended library</a> from npm, such as <a href="https://observablehq.com/framework/lib/leaflet">Leaflet</a>, <a href="https://observablehq.com/framework/lib/dot">GraphViz</a>, <a href="https://observablehq.com/framework/lib/tex">TeX</a>, or <a href="https://observablehq.com/framework/lib/duckdb">DuckDB</a>.
+    <img src="./images/chart5.png" class="responsive-img">
   </div>
   <div class="card">
-    Ask for help, or share your work or ideas, on the <a href="https://talk.observablehq.com/">Observable forum</a>.
+    <img src="./images/chart6.png" class="responsive-img">
   </div>
   <div class="card">
-    Visit <a href="https://github.com/observablehq/framework">Framework on GitHub</a> and give us a star. Or file an issue if you’ve found a bug!
+    <img src="./images/chart7.png" class="responsive-img">
+  </div>
+  <div class="card">
+    <img src="./images/chart8.png" class="responsive-img">
+  </div>
+  <div class="card">
+    <img src="./images/chart9.png" class="responsive-img">
+  </div>
+  <div class="card">
+    <img src="./images/chart10.png" class="responsive-img">
+  </div>
+  <div class="card">
+    <img src="./images/chart11.png" class="responsive-img">
+  </div>
+  <div class="card">
+    <img src="./images/chart12.png" class="responsive-img">
+  </div>
+  <div class="card">
+    <img src="./images/chart13.png" class="responsive-img">
+  </div>
+  <div class="card">
+    <img src="./images/chart14.png" class="responsive-img">
+  </div>
+  <div class="card">
+    <img src="./images/chart15.png" class="responsive-img">
+  </div>
+  <div class="card">
+    <img src="./images/chart16.png" class="responsive-img">
   </div>
 </div>
